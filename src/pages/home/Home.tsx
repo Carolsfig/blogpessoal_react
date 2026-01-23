@@ -23,7 +23,7 @@ function Home() {
 
                     <div className="flex justify-center ">
                         <img
-                            src="public\img\imagem_home.png"
+                            src="https://raw.githubusercontent.com/Carolsfig/blogpessoal_react/refs/heads/main/public/img/imagem_home.png"
                             alt="Imagem Página Home"
                             className='w-2/3'
                         />
