@@ -49,7 +49,7 @@ Authorization: Bearer <token>
 2. Clique em **Cadastre-se** e preencha os dados solicitados.
 
    * No campo **foto**, você pode inserir o link de uma imagem disponível online ou deixar em branco.
-   * No campo **usuário**, utilize um **email válido** ou fictício (exemplo: `email@email.com.br`).
+   * No campo **usuário**, utilize um **email válido** ou fictício (exemplo: `seunome@email.com.br`).
    * A **senha deve conter no mínimo 8 caracteres**.
 3. Após o cadastro, faça **login** na página de login.
 4. Com o usuário autenticado, você poderá:
