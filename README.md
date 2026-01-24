@@ -1,73 +1,106 @@
-# React + TypeScript + Vite
+# Blog Pessoal - Frontend (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação frontend do projeto **Blog Pessoal**, desenvolvida em **React JS**, com integração completa a uma **API REST** com autenticação e controle de acesso via **JWT**.
 
-Currently, two official plugins are available:
+O sistema permite o gerenciamento de **usuários, postagens e temas**, oferecendo uma experiência completa de um blog moderno com autenticação, rotas protegidas e consumo de API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Funcionalidades
 
-## Expanding the ESLint configuration
+* Cadastro de usuários
+* Login com autenticação JWT
+* Armazenamento e envio automático do token JWT nas requisições
+* CRUD completo de **postagens**
+* CRUD completo de **temas**
+* Página de **perfil do usuário**
+* Proteção de rotas para usuários autenticados
+* Integração total com backend
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Tecnologias Utilizadas
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* **React JS** – Construção da interface e componentização
+* **Vite** – Setup e build do projeto
+* **Tailwind CSS** – Estilização responsiva e reutilizável
+* **React Router DOM** – Gerenciamento de rotas públicas e privadas
+* **Axios** – Consumo da API REST e configuração de headers com JWT
+
+
+
+## Autenticação
+
+A aplicação utiliza **JWT (JSON Web Token)** para autenticação.
+
+Fluxo:
+
+1. O usuário realiza login
+2. O backend retorna um token JWT
+3. O token é armazenado no frontend
+4. O token é enviado automaticamente no header das requisições protegidas:
+
+```http
+Authorization: Bearer <token>
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## ▶️ Execução Local
+
+### Pré-requisitos
+
+* Node.js
+* npm ou yarn
+
+### Passos
+
+```bash
+git clone https://github.com/Carolsfig/blogpessoal_react.git
+cd blogpessoal_react
+npm install
+npm run dev
 ```
+
+A aplicação estará disponível em:
+
+```
+http://localhost:5173
+```
+
+
+
+## Backend
+
+Este frontend consome a API REST do projeto **Blog Pessoal – Backend**, desenvolvida em **NestJS**, com autenticação JWT, testes automatizados e documentação Swagger.
+
+Repositório do backend: [https://github.com/Carolsfig/nestjs](https://github.com/Carolsfig/nestjs)
+
+
+
+## Deploy
+
+A aplicação está disponível online:
+
+🔗 **Link do deploy:** https://blogpessoal-react-sooty.vercel.app/ 
+
+
+
+## Objetivo do Projeto
+
+Consolidar conhecimentos em:
+
+* React e frontend moderno
+* Consumo de APIs REST
+* Autenticação e controle de acesso
+* Integração frontend + backend
+* Boas práticas de organização e componentização
+
+
+
+## 👩‍💻 Desenvolvido por
+
+**Carolina Figueiredo**
+
+* GitHub: [https://github.com/Carolsfig](https://github.com/Carolsfig)
+* LinkedIn: https://www.linkedin.com/in/carolinafigueiredoo
