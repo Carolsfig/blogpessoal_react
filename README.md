@@ -43,6 +43,21 @@ Fluxo:
 ```http
 Authorization: Bearer <token>
 ```
+## 🧭 Como Utilizar a Aplicação
+
+1. Acesse a aplicação pelo link do deploy ou execute o projeto localmente.
+2. Clique em **Cadastre-se** e preencha os dados solicitados.
+
+   * No campo **foto**, você pode inserir o link de uma imagem disponível online ou deixar em branco.
+   * No campo **usuário**, utilize um **email válido** ou fictício (exemplo: `email@email.com.br`).
+   * A **senha deve conter no mínimo 8 caracteres**.
+3. Após o cadastro, faça **login** na página de login.
+4. Com o usuário autenticado, você poderá:
+
+   * Criar, editar e deletar **postagens**
+   * Criar, editar e deletar **temas**
+   * Visualizar e acessar seu **perfil de usuário**
+5. Fique à vontade para testar todas as funcionalidades da aplicação.
 
 
 
